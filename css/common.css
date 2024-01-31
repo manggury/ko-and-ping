@@ -1,0 +1,35 @@
+.sec {
+    padding: 100px 0;
+}
+
+.con {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title {
+    margin: 0 0 36px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.title h2 {
+    margin: 0 0 20px 0;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.title p {
+    font-size: 18px;
+}
+
+:root {
+    --pc: #47B0B2;
+    --sc: #a3d7d8;
+    --tc: #e1f0f1;
+    --wc: #ffffff;
+    --dc: #000000;
+    --lc: #f9f9f9;
+}
