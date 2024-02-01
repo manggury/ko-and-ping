@@ -60,13 +60,12 @@
                         <h3>빠른상담신청</h3>
                     </div>
                     <form action="" id="queik_if">
-                        <input type="checkbox" name="color" value="체크" class="chek_btn">개인정보 취급방침
-
-                        <textarea name="" id="textarea" placeholder="불편한곳을 적어주세요"></textarea>
-                        <input type="text" name="" value="" placeholder="성함">
-                        <input type="tel" name="" value="" placeholder="연락처">
-                        <input type="submit" name="" value="상담신청하기" class="q_btn">
-
+                        <label><input type="checkbox" name="color" value="체크" class="chek_btn"><span>개인정보
+                                취급방침</span></label>
+                        <label><textarea name="" id="textarea" placeholder="불편한곳을 적어주세요"></textarea></label>
+                        <label><input type="text" name="" value="" placeholder="성함"></label>
+                        <label><input type="text" name="" value="" placeholder="연락처"></label>
+                        <label><input type="submit" name="" value="상담신청하기" class="q_btn"></label>
                     </form>
                 </div>
             </section>
@@ -211,32 +210,35 @@
                         환자분들의 편안한 일상을 위해 항상 고민하고 양질의 진료환경을 제공할 것을 약속드립니다. </p>
                 </div>
                 <div class="introduce_wrap con">
-                    <div class="introduce_side">
-                        <div class="itm itm01">
-                            <img src="./images/main_introduce01.jpg" alt="">
-                        </div>
-                        <div class="itm itm02">
-                            <img src="./images/main_introduce01.jpg" alt="">
-                        </div>
-                        <div class="itm itm03">
-                            <img src="./images/main_introduce01.jpg" alt="">
-                        </div>
-                        <div class="itm itm04">
-                            <img src="./images/main_introduce01.jpg" alt="">
-                        </div>
-                        <div class="itm itm05">
-                            <img src="./images/main_introduce01.jpg" alt="">
-                        </div>
-                        <div class="itm itm06">
-                            <img src="./images/main_introduce01.jpg" alt="">
-                        </div>
-                        <div class="itm itm07">
-                            <img src="./images/main_introduce01.jpg" alt="">
-                        </div>
-                        <div class="itm itm08">
-                            <img src="./images/main_introduce01.jpg" alt="">
+                    <div class="in">
+                        <div class="introduce_side">
+                            <div class="itm itm01">
+                                <img src="./images/main_introduce01.jpg" alt="">
+                            </div>
+                            <div class="itm itm02">
+                                <img src="./images/main_introduce01.jpg" alt="">
+                            </div>
+                            <div class="itm itm03">
+                                <img src="./images/main_introduce01.jpg" alt="">
+                            </div>
+                            <div class="itm itm04">
+                                <img src="./images/main_introduce01.jpg" alt="">
+                            </div>
+                            <div class="itm itm05">
+                                <img src="./images/main_introduce01.jpg" alt="">
+                            </div>
+                            <div class="itm itm06">
+                                <img src="./images/main_introduce01.jpg" alt="">
+                            </div>
+                            <div class="itm itm07">
+                                <img src="./images/main_introduce01.jpg" alt="">
+                            </div>
+                            <div class="itm itm08">
+                                <img src="./images/main_introduce01.jpg" alt="">
+                            </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="arrow">
                     <span class="material-symbols-outlined icon left">
@@ -271,8 +273,8 @@
                             new daum.roughmap.Lander({
                                 "timestamp": "1706662597860",
                                 "key": "2hwb2",
-                                "mapWidth": "690",
-                                "mapHeight": "654"
+                                "mapWidth": "675",
+                                "mapHeight": "306"
                             }).render();
                         </script>
                     </div>
@@ -285,7 +287,7 @@
                             </li>
                             <li>
                                 <span>TEL</span>
-                                <strong>051-946-1000</strong>
+                                <strong class="call">051-946-1000</strong>
                             </li>
                             <li>
                                 <span>FAX</span>
@@ -318,7 +320,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="notice">
+                    <div class="notice itm">
                         <div class="sub_title">
                             <h3>
                                 <strong>공지사항</strong>
@@ -330,17 +332,29 @@
                             <p>코앤핑의 새로운 소식을 만나보실 수 있습니다.</p>
 
                         </div>
-                        <div class="box">1</div>
+
                     </div>
-                    <div class="latterly">
+                    <div class="latterly itm">
                         <div class="sub_title">
                             <h3>
-                                <strong>후기</strong>
+                                <strong>병원후기</strong>
                                 <a href="" class="more_btn"><span>전체보기</span><span class="material-symbols-outlined">
                                         double_arrow
                                     </span></a>
                             </h3>
                             <p>다양한 코앤핑 치료이야기를 만나보실 수 있습니다.</p>
+
+                        </div>
+                    </div>
+                    <div class="news itm">
+                        <div class="sub_title">
+                            <h3>
+                                <strong>코앤핑칼럼</strong>
+                                <a href="" class="more_btn"><span>전체보기</span><span class="material-symbols-outlined">
+                                        double_arrow
+                                    </span></a>
+                            </h3>
+                            <p>언론속의 코앤핑을 만나보실 수 있습니다.</p>
 
                         </div>
                     </div>
