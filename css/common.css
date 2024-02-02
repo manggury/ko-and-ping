@@ -23,6 +23,29 @@
 
 .title p {
     font-size: 18px;
+    word-break: keep-all;
+}
+
+@media(max-width:500px) {
+    .title {
+        margin: 0 0 36px 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .title h2 {
+        margin: 0 0 20px 0;
+        font-size: 40px;
+        font-weight: 700;
+
+        font-size: 6vw;
+    }
+
+    .title p {
+        font-size: 18px;
+        font-size: 16px;
+        font-weight: 500;
+    }
 }
 
 :root {

@@ -26,8 +26,66 @@
 }
 
 @media (max-width : 768px) {
+    #header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        height: 100px;
+        background: var(--wc);
+    }
+
+    .header_wrap h1 {
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
+
     .gnb {
-        display: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: -100%;
+        z-index: 999;
+        width: calc(100% - 100px);
+        height: 100vh;
+
+        background: #fff;
+        border-right: 1px solid var(--pc);
+    }
+
+    .gnb.on {
+        left: 0;
+    }
+
+    .header_wrap .gnb>ul {
+        flex-direction: column;
+        color: #fff;
+        padding: 200px 0 0 15px;
+        gap: 30px;
+    }
+
+    .header_wrap .gnb>ul>li {
+        border-bottom: 1px solid var(--tc);
+
+    }
+
+    .header_wrap .gnb>ul>li a {
+        line-height: 42px;
+        color: var(--dc);
+    }
+
+    .gnb>ul>li>a {}
+
+    #header {
+        display: flex;
+        align-items: center;
+    }
+
+    #header .mopen {
+        display: block;
+
     }
 }
 
@@ -37,6 +95,11 @@
     width: 100%;
     height: 600px;
 }
+
+.visual_wrap .desc {
+    display: none;
+}
+
 
 .queik {
     display: flex;
@@ -224,11 +287,19 @@
     }
 
     .queik {
-        padding: 50px 0 100px 0;
+        padding: 0 0 100px 0;
         margin: 0 auto 0 auto;
     }
 
+    .queik::before {
+        content: "";
+        display: block;
+        background: url(../images/main_introduce05.jpg) no-repeat center center/cover;
+        height: 350px;
+    }
+
     #queik_if {
+        position: relative;
         display: grid;
         grid-template-columns: repeat(1, min-width);
         gap: 15px;
@@ -240,7 +311,19 @@
             "e e";
         justify-content: center;
 
-        padding: 30px 0;
+        padding: 30px 0 60px 0;
+
+    }
+
+    #queik_if::after {
+        content: "\e7cd";
+        font-family: material symbols outlined;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        color: var(--sc);
+        font-size: 30px;
     }
 
     #queik_if label:nth-child(1) {
@@ -307,6 +390,17 @@
     }
 }
 
+@media (max-width : 520px) {
+    .clinic_wrap {
+        grid-template-columns: repeat(2, min-content);
+    }
+
+    .clinic_wrap .itm p {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
 /* main_banner--------------------------------------------------------------- */
 
 .main_banner {
@@ -368,6 +462,10 @@
 @media(max-width:768px) {
     .banner_wrap .img_box01 img {
         height: 12vh;
+    }
+
+    .main_banner .title h2 {
+        font-weight: 600;
     }
 }
 
@@ -435,6 +533,7 @@
 
     .signature_wrap .itm {
         display: flex;
+        gap: 15px;
     }
 
     .signature_wrap .itm>* {
@@ -452,6 +551,43 @@
     .main_signature {
         background: var(--tc);
         background: linear-gradient(0.1turn, var(--wc), var(--wc), var(--tc));
+    }
+}
+
+@media(max-width:768px) {
+    .signature_wrap .itm {
+        display: flex;
+        gap: 15px;
+
+        flex-direction: column;
+    }
+
+    .signature_wrap .itm .img_area {
+        width: 350px;
+        margin: 0 auto;
+        min-height: 200px;
+        border-radius: 50%;
+    }
+
+    .signature_wrap .itm02 .img_area {
+        order: 0;
+    }
+
+    .signature_wrap .itm .txt strong {
+        display: block;
+        font-size: 24px;
+        font-weight: 700;
+        word-break: keep-all;
+
+        margin: 0 0 8px 0;
+        font-size: 5vw;
+        font-weight: 600;
+    }
+
+    .signature_wrap .itm .txt p {
+        font-size: 16px;
+        line-height: 20px;
+        word-break: keep-all;
     }
 }
 
@@ -891,6 +1027,41 @@ tr:nth-child(5) td {
     }
 }
 
+@media (max-width : 630px) {
+    .comunity_wrap {
+        grid-template-areas:
+            ". . b b b b b b b b . ."
+            "c c c c d d d d e e e e";
+        gap: 60px 30px;
+    }
+
+    .adress>ul>li span {
+        flex: 0 0 20vw;
+        font-size: 4vw;
+    }
+
+    .adress>ul>li strong {
+        font-size: 3vw;
+    }
+
+    tr {
+        font-size: 3vw;
+    }
+
+    th {
+        padding: 0 20px 0 0;
+        line-height: 3vw;
+    }
+}
+
+@media (max-width : 630px) {
+    .comunity_wrap {
+        grid-template-areas:
+            ". . b b b b b b b b . ."
+            "c c c c d d d d e e e e";
+        gap: 60px 30px;
+    }
+}
 
 /* footer--------------------------------------------------------------- */
 
